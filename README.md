@@ -1,146 +1,183 @@
 # 🍬 Sweet Shop Management System (MERN Stack)
-# ===========================================
 
-# 📌 Project Description
-# ----------------------
-# A full-stack Sweet Shop Management System built using the MERN stack.
-# The app supports User and Admin roles, online ordering, inventory
-# management, order history, and a modern responsive UI.
+## 📌 Project Description
+Sweet Shop Management System ek full-stack web application hai jo MERN stack par bana hai.  
+Is project me **User** aur **Admin** dono roles supported hain.
 
-# =========================================================
-# 🛠 Tech Stack
-# =========================================================
-# Frontend: React (Vite), Tailwind CSS, Axios, React Router
-# Backend : Node.js, Express.js, MongoDB, Mongoose
-# Auth    : JWT, bcrypt
-# UI      : React Hot Toast, Lucide Icons, Framer Motion
 
-# =========================================================
-# ⚙️ LOCAL SETUP GUIDE
-# =========================================================
+### 📸 Screenshots
 
-# 1️⃣ Clone Repository
+![Landing Page](screenshots/landing.png)
+![Login Page](screenshots/login.png)
+![User Dashboard](screenshots/dashboard.png)
+![Cart Page](screenshots/cart.png)
+![Checkout Page](screenshots/checkout.png)
+![Order History](screenshots/order-history.png)
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+
+### Key Features
+- User registration & login
+- Admin dashboard for inventory management
+- Online sweet ordering
+- Cart & checkout
+- Order history
+- Role-based access control
+- Fully responsive modern UI
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- Axios
+- React Router DOM
+- React Hot Toast
+- Framer Motion
+- Lucide Icons
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+### Authentication
+- JWT (JSON Web Token)
+- bcrypt
+
+---
+
+## ⚙️ Local Setup Guide
+
+### 1️⃣ Clone Repository
+```bash
 git clone https://github.com/riyalchandrakar/sweetcart.git
 cd sweetcart
 
+```
 
-# =========================================================
-# 🔧 BACKEND SETUP
-# =========================================================
-
+### 🔧 Backend Setup
+```bash
 cd backend
 npm install
+```
 
-# Create .env file in backend folder
-# ----------------------------------
-# PORT=5000
-# MONGO_URI=your_mongodb_connection_string
-# JWT_SECRET=your_secret_key
+### Create .env file inside backend folder
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
-# Run backend server
+### Run Backend Server
+```bash
 npm start
+```
 
-# Backend runs on:
-# http://localhost:5000
+### Backend will run on:
+```bash
+http://localhost:5000
+```
 
+## 👑 Admin Seed (Mandatory Step)
 
-# =========================================================
-# 👑 ADMIN SEED (MANDATORY STEP)
-# =========================================================
-# This step creates a default admin account in the database.
+### Ye step database me default admin account create karta hai.
 
-# Run admin seed script
+### Run seed command
+```bash
 npm run seed:admin
-
-# OR (if script not added)
+```
+### OR (manual)
+```bash
 node src/seed/adminSeed.js
+```
+```bash
+Default Admin Credentials
+Email    : admin@sweetshop.com
+Password : admin123
+Role     : admin
+```
 
-# Default Admin Credentials:
-# --------------------------
-# Email    : admin@sweetshop.com
-# Password : admin123
-# Role     : admin
+⚠️ Important Notes:
 
-# ⚠️ NOTE:
-# - This should be run ONLY ONCE
-# - Password is hashed before saving
-# - Admin can login from the same login page
+Ye command sirf ek baar run karein
 
+Password automatically hashed hota hai
 
-# =========================================================
-# 🎨 FRONTEND SETUP
-# =========================================================
+Admin same login page se login karega
 
+### 🎨 Frontend Setup
+```bash
 cd ../frontend
 npm install
+```
 
-# Create .env file in frontend folder
-# -----------------------------------
-# VITE_API_URL=http://localhost:5000/api
+### Create .env file inside frontend folder
+```bash
+VITE_API_URL=http://localhost:5000/api
 
-# Run frontend
+Run Frontend
 npm run dev
+```
 
-# Frontend runs on:
-# http://localhost:5173
+### Frontend will run on:
+```bash
+http://localhost:5173
+```
 
+### 🧪 Test Report (Manual Testing)
 
-# =========================================================
-# 🧪 TEST REPORT (MANUAL TESTING)
-# =========================================================
-# ✔ User registration & login
-# ✔ Admin login & role protection
-# ✔ Cart persistence (localStorage)
-# ✔ Checkout & order placement
-# ✔ Stock update after purchase
-# ✔ Order history (user)
-# ✔ Admin CRUD (add/edit/delete sweets)
-# ✔ Out-of-stock handling
-# ✔ Responsive UI (mobile / tablet / desktop)
+  -- All major features manually tested:
 
-# All test cases PASSED successfully.
+  -- User registration & login
 
+  -- Admin login & role protection
 
-# =========================================================
-# 📸 SCREENSHOTS
-# =========================================================
-# Add screenshots in /screenshots folder:
-# - landing.png
-# - login.png
-# - dashboard.png
-# - cart.png
-# - checkout.png
-# - order-history.png
-# - admin-dashboard.png
+  -- Cart persistence (localStorage)
+
+  -- Checkout & order placement
+
+  -- Stock update after purchase
+
+  -- User order history
+
+  -- Admin CRUD operations (Add / Edit / Delete sweets)
+
+  -- Out-of-stock handling
+
+  -- Responsive UI (Mobile / Tablet / Desktop)
+
+✅ All test cases passed successfully
 
 
-# =========================================================
-# 🤖 My AI Usage
-# =========================================================
-# AI tools (ChatGPT) were used for:
-# - Debugging runtime and logic errors
-# - Improving UI/UX with Tailwind CSS
-# - Refactoring React components
-# - Understanding MERN architecture patterns
-# - Writing cleaner, maintainable code
 
-# All generated suggestions were reviewed,
-# understood, and manually integrated by me.
+### 🤖 My AI Usage
 
+ AI tools (ChatGPT) were used to assist with:
 
-# =========================================================
-# 🚀 LIVE DEPLOYMENT 
-# =========================================================
-# https://sweetcart-1.onrender.com
+   Debugging runtime and logic errors
+
+   Improving UI/UX using Tailwind CSS
+
+   Refactoring React components
+
+   Understanding MERN architecture patterns
+
+   Writing cleaner and maintainable code
+
+ All suggestions were reviewed, understood, and manually implemented.
 
 
-# =========================================================
-# 👨‍💻 AUTHOR
-# =========================================================
-# Name : Riyal Chandrakar
-# Role : Full Stack Developer (MERN)
+### 🚀 Live Deployment
+
+#### 🔗 Live App:
+https://sweetcart-1.onrender.com
 
 
-# =========================================================
-# ✅ END
-# =========================================================
+### 👨‍💻 Author
+
+Riyal Chandrakar<br>
+Full Stack Developer (MERN)
